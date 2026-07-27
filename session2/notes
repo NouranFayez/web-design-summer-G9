@@ -1,0 +1,14 @@
+-- fieldset , legend ==> search
+
+-- first Name ==> required , letters only 
+-- last name ==> at least 5 character
+-- mobile ==> 11 characters , numbers only , 010 , 011 , 012 , 015
+-- courses (select with filter) - datalist => search
+-- upload image ==> image only  .png
+-- comment ==> multi line , required
+-- stop autocomplete
+-- date of birth , required
+-- gender ==> required
+-- tracks (checkbox) ==> auto select on 1 of it
+-- range ==> start with 10 end 100
+-- every input has name attribute
