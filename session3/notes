@@ -1,0 +1,10 @@
+- Css Methods ==> internal sheet
+                  inline style
+                  external sheet
+
+
+
+
+-- section (bg-light) ==> container 
+-- container ==> header (center) , 3 cards
+-- card ==> img , header , p , a
