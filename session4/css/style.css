@@ -1,0 +1,159 @@
+/* Reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+
+}
+
+a {
+    /* line-through , underline , overline  */
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* Global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+
+.title-style {
+    font-size: 40px;
+    text-transform: uppercase;
+    /* bold , bolder , normal , light , lighter , 100:900 */
+    font-weight: 100;
+}
+
+.hr-orange {
+    border: 2px solid orangered;
+}
+
+.hr-white {
+    border: 2px solid white;
+}
+
+.hr-style {
+    width: 7%;
+    margin: 2% auto;
+}
+
+.text-gray {
+    color: dimgray;
+}
+
+.w-32 {
+    width: 32%;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.bg-light {
+    background-color: rgb(230, 229, 229);
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: white;
+}
+
+/* color ==> red , green , blue */
+/* 
+rgb ==> 0 : 255
+hexa ==> 6:8
+0 : 9
+a : f
+
+
+
+
+*/
+
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid;
+    padding: 0.5% 1.5%;
+    margin-top: 3%;
+}
+
+.bg-dark{
+    background-color: rgb(36, 36, 36);
+}
+
+/* Custom style */
+nav{
+    padding: 1% 0%;
+}
+nav img{
+    margin-top: 5px;
+}
+nav ul {
+ width: 26%;
+}
+nav li{
+    font-size: 25px;
+    margin-left: 4%;
+}
+
+.card-margin-top {
+    margin-top: 4%;
+}
+
+.card-margin-top h2 {
+    margin-bottom: 5%;
+}
+
+.icon-circle {
+    color: orangered;
+    font-size: 30px;
+    margin-bottom: 6%;
+    border: solid;
+    /* padding: 3%; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-top: 3%;
+}
+
+.bg-img {
+    background-image: url(../images/istockphoto-511061090-612x612.jpg);
+    /* height: 500px; */
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: top right;
+    background-size: 100% 138%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.447);
+}
