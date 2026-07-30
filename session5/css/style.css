@@ -236,3 +236,36 @@ nav li {
 .custom-card:hover .card-img-overlay{
    display: block;
 }
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.display-flex{
+    display: flex;
+    /* flex-direction ==> row (default) , row-reverse , column , column-reverse; */
+    /* flex-wrap ==> nowrap(default) , wrap , wrap-reverse (search) */
+    /* flex-flow: row-reverse wrap; */
+    flex-flow: wrap;
+    /* justify-content:  ==> flex-start , flex-end , center , space-between  space-around , space-evenly; */
+    justify-content: space-between;
+    /* align-items==> strtech(default) , flex-start , flex-end , center */
+    align-items: flex-start;
+    row-gap : 50px;
+    /* column-gap:3% */
+    /* align-content ==> search */
+
+
+}
+.align-self-end{
+    align-self: flex-end;
+}
+
+.card-flex{
+    width: 30%;
+    padding: 2%;
+    background-color: white;
+}
+
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
