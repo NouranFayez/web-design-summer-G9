@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Germania One", system-ui;
+    /* font-family: "Germania One", system-ui; */
      /* font-family: "Almarai", sans-serif; */
+        font-family: "Poppins", sans-serif;
 }
 
 
@@ -120,3 +121,19 @@
     /* outline: 0; */
     border-color: red;
 }
+
+
+.custom-card{
+    background-color: rgb(225, 225, 225);
+    padding: 2%;
+    width: 30%;
+    margin-bottom: 5%;
+      /* font-family: "Poppins", sans-serif; */
+}
+
+
+
+/* https://www.figma.com/design/SYYRHfHnH6UWZETPYLH0XS/Minimalistic-Responsive-Landing-Pages--Community-?node-id=0-1&p=f&t=jd4FydKfszkizle4-0 */
+
+
+

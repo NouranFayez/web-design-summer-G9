@@ -1,0 +1,63 @@
+/* rule ==> @media */
+/* @media ==> type condition breakpoint */
+/* type ==> screen(default) print speetch */
+/* condition ==> max-width , min-width , range  */
+/* breakpoint ==> screen sizes */
+
+
+
+/* 0 : 400 */
+/* @media (max-width: 400px){
+  
+} */
+
+/* 400  */
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .custom-card{
+        width: 80%;
+    }
+ }
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+/* 0 : 767.98 */
+@media (max-width: 767.98px) { 
+    .custom-card{
+        width: 48%;
+    }
+ }
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+/* 0 : 575.98px */
+@media (max-width: 575.98px) { 
+      .custom-card{
+        background-color: goldenrod;
+        color: white;
+        width: 100%;
+    }
+    .d-sm-none{
+        display: none;
+    }
+
+}
+
+
+
+/*  900 - ......... */
+@media (min-width : 900px){
+    .d-flex{
+        background-color: black;
+    }
+}
+
+/* https://getbootstrap.com/docs/5.3/layout/breakpoints/ */
+
+
+
+@media (min-width : 400px) and (max-width:800px){
+   .custom-card{
+    border: 5px solid blue;
+   }
+}
+
