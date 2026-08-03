@@ -20,6 +20,8 @@
 
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .justify-content-between {
@@ -201,3 +203,60 @@ ol li::marker {
     position: absolute;
     top: 100%;
 } */
+
+.transform-card{
+    width: 35%;
+   
+    color: white;
+    padding: 3%;
+    font-size: 20px;
+    transition: 1s;
+}
+.bg-teal{
+     background-color: teal;
+}
+.bg-gold{
+    background-color: goldenrod;
+}
+.transform-card:hover{
+    transform: translateX(100px);
+    transform: translateX(50%);
+    transform: translateX(-50%);
+    transform: translateY(100px);
+    transform: translateY(-80%);
+    transform: translate(100px , 50%);
+    transform: rotateX(180deg);
+    transform: rotateX(-180deg);
+    transform: rotate(50deg);
+    transform: rotate(-90deg);
+    transform: scaleX(1.5);
+    transform: scaleX(0.5);
+    transform: scaleX(0);
+    transform: scaleY(0.5);
+    transform: scaleY(1.5);
+    transform: scale(1.5);
+    transform: skewX(40deg);
+    transform: skewX(-40deg);
+    transform: skewY(40deg);
+    /* matrix ==> scaleX() , skewY() , skewX , scaleY translateX translateY */
+    transform: matrix(1.3 , 0 , 0.4 , 0.5 , 200 , 150 );
+
+}
+.custom-transform-card{
+    width: 35%;
+    box-shadow: 0px 0px 4px 3px lightgray;
+    /* hidden , scroll , auto ==> search */
+    overflow: hidden;
+}
+.custom-transform-card img{
+    width: 100%;
+    transition: 1s;
+}
+.custom-transform-card:hover img{
+    /* transform: rotate(10deg); */
+    transform: scale(1.4) rotate(10deg);
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+
