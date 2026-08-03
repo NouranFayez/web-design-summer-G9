@@ -1,0 +1,203 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+
+/* custom style */
+.card-hover {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 3px lightgray;
+
+}
+
+.card-hover img {
+    width: 100%;
+}
+
+.card-position-absolute {
+    position: absolute;
+    top: 88%;
+    background: white;
+    height: 100%;
+    transition: 1s;
+}
+
+.card-hover:hover .card-position-absolute {
+    top: 0;
+}
+
+/* Pseudo class  */
+ul li:first-child {
+    color: red;
+}
+
+ul li:last-child {
+    color: blue;
+}
+
+ul li:nth-child(2) {
+    color: teal;
+    font-size: 20px;
+}
+
+.custom-class p {
+    color: goldenrod;
+}
+
+.custom-class .custom-class-p {
+    color: red;
+}
+
+#about-section .card {}
+
+#contact-section .card {}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid lightgray;
+    padding: 2%;
+}
+
+
+
+/* tr:nth-child(3) , tr:nth-child(5) , tr:nth-child(7){
+    background-color: lightgray;
+} */
+
+/* nth-child ==> number , even , odd */
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+tr:first-child {
+    background-color: teal;
+    color: white;
+}
+
+tr:nth-child(even):hover {
+    background-color: lightcoral;
+}
+
+tr:nth-child(odd):hover {
+    background-color: lightblue;
+}
+
+.custom-form {
+
+    width: 50%;
+    margin: 4% auto 4%;
+}
+
+.custom-form input:disabled {
+    background-color: goldenrod;
+}
+
+input:checked {
+    box-shadow: 0px 0px 4px 3px blue;
+    width: 30px;
+    height: 30px;
+}
+
+/* https://www.w3schools.com/cssref/css_ref_pseudo_classes.php */
+
+/* Pseudo element ==> specific part of tag */
+
+h2::first-line {
+    color: blue;
+}
+
+h2::first-letter {
+    color: red;
+    font-size: 35px;
+}
+
+input::placeholder {
+    color: blue;
+}
+
+::selection {
+    background-color: goldenrod;
+    color: white;
+}
+
+ol li::marker {
+    color: blue;
+    font-size: 20px;
+}
+
+/* ::before , ::after */
+
+.custom-div {
+    background-color: lightgray;
+    padding: 2%;
+    font-size: 25px;
+    margin: 4% 0%;
+    position: relative;
+}
+
+.custom-div::before {
+    content: "Web Design";
+    background: antiquewhite;
+    padding: 2%;
+    width: 50%;
+    display: inline-block;
+    border-right: 4px solid blue;
+}
+
+.custom-div::after {
+    content: "";
+    /* width: 0; */
+    /* height: 0; */
+    /* background-color: lightgray; */
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid lightgray;
+}
+
+
+/* .square{
+       width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    position: absolute;
+    top: 100%;
+} */
