@@ -1,0 +1,139 @@
+
+/*  reset style */
+:root{
+    --bg-light : rgb(236, 236, 236);
+    --font-size-large : 40px;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* direction: ltr; */
+    /* direction: rtl; */
+
+}
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+.bg-light{
+    background-color: var(--bg-light);
+}
+
+
+/* custom style */
+/* .card {
+    width: 40%;
+    background-color: #eee;
+    padding: 2%;
+}
+
+.card p {
+    color: blue;
+}
+
+.card:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+.card:hover p {
+    color: white;
+} */
+
+/* nested css selector */
+.card {
+    width: 40%;
+    background-color: #eee;
+    padding: 2%;
+
+    & p {
+        color: blue;
+    }
+
+    &:hover {
+        background-color: goldenrod;
+        color: white;
+        & p{
+            color: white;
+        }
+    }
+}
+
+.card > p{
+    background-color: lightcoral;
+}
+.card + h1{
+    color: red;
+}
+.card ~ h1{
+    background-color: lightblue;
+    border: 3px solid black;
+}
+
+[name]{
+    background-color: lightgray;
+}
+[type=email]{
+    background-color: lightskyblue;
+    padding: 2%;
+}
+.animation-card{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 4%;
+    /* animation-name: changeBgColor ; */
+    /* animation-duration: 3s; */
+    /* animation-delay: 3s; */
+    /* backwards , both ==> search */
+    /* animation-fill-mode: forwards; */
+    /* animation-direction: reverse ; */
+    /* animation-direction: alternate ;
+    animation-direction: alternate-reverse ; */
+    /* animation-iteration-count: 2; */
+    /* animation-iteration-count: infinite; */
+    /* ease , linear , ease-in , ease-out , ease-in-out */
+    /* animation-timing-function: ease; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: changeBgColor 3s linear 2s infinite alternate ; */
+    animation: changeBgColor 3s linear  infinite alternate ;
+
+
+}
+.animation-card:hover{
+    animation-play-state: paused;
+}
+@keyframes changeBgColor {
+    /* from{
+        background-color: black;
+        border: 4px solid goldenrod;
+    }
+    to{
+        transform: translateX(400px);
+        background-color: red;
+    } */
+     0%{
+         background-color: black;
+          border: 4px solid goldenrod;
+     }
+     25%{
+        background-color: lightblue;
+        transform: translateX(400px);
+     }
+     50%{
+        background-color: maroon;
+        transform: translate(400px , 400px);
+     }
+     75%{
+        background-color: lightgreen;
+        transform: translate(0px , 400px);
+     }
+     100%{
+        background-color: orangered;
+     }
+    
+}
