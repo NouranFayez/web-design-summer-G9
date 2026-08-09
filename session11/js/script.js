@@ -130,7 +130,7 @@ var age = 20
 
 // var lastName = "Ahmed";
 // var lastName = prompt('enter your name');
-// (lastName == "sara") ? console.log('welcome sara') : console.log('invalid user')
+// (lastName == "sara" && typeof lastName == "string") ? console.log('welcome sara') : console.log('invalid user')
 
 
 //// truthy value // falsy value 
@@ -139,8 +139,147 @@ var age = 20
 // var m = -30; // true
 // var m = "dghh"; // true
 // var m = ""; // false
-var m = null ; // false
-var m = NaN ; // false
-var m ; // undefined - false
+var m = null; // false
+var m = NaN; // false
+var m; // undefined - false
 
-(!m) ? console.log('correct') : console.log('wrong')
+(m) ? console.log('correct') : console.log('wrong')
+
+
+// if Condition 
+
+// if(condition/s){
+//     true
+// }
+// else {
+//     false
+// }
+
+
+var fName = "Zein"
+
+// if(fName == "Zein") console.log('welcome zein')
+//     // else console.log('invalid user')
+
+// var job = prompt('enter your Job')
+
+// Accountant  -- Acc
+// Engineer  -- Eng
+// developer  -- dev
+// doctor -- dr - doc
+
+// if(job == "Acc") console.log('accountant')
+//     else if(job == "Eng") console.log('Engineer') 
+//    else if(job == "Dev") console.log('Developer') 
+//    else if(job == "doc" || job == 'dr') console.log('Doctor') 
+// else console.log('invalid job')
+
+
+
+// var userName = prompt('enter your name')
+// userName = "" // empty string ==> please enter your name
+// userName = null ==> please enter your name
+// userName = zein ==> age , address
+// userName = other user ==> invalid user
+
+// console.log(userName)
+
+// if (userName == "" || userName == null) {
+//     alert("please enter your name")
+// }
+// else {
+//     if(userName == 'zein') {
+//         var age = prompt('enter your age')
+//         var address = prompt('enter your address')
+//         alert(`name = ${userName}
+//             age = ${age}
+//             address = ${address}`)
+//     }
+//     else {
+//         alert('invalid user')
+//     }
+// }
+
+
+
+// if (userName == "" || userName == null) {
+//     alert("please enter your name")
+// }
+// else if(userName == 'zein') {
+//     var age = prompt('enter your age')
+//     var address = prompt('enter your address')
+//     console.log(
+//         `name = ${userName}
+//         age = ${age}
+//         address = ${address}`)
+// }
+// else {
+//     console.log('invalid user')
+// }
+
+
+
+// degree 
+
+// degree > 90 ==> A 
+// degree 80:90 ==> B
+// degree 70:80 ==> C
+// degree < 70 ==> F
+
+
+
+// switch case 
+
+// switch(variable){
+//     case 1: code 
+//     case 2 : code 
+//     case 3 : code 
+//     default : code 
+// }
+
+
+
+var job = 20
+
+switch (job) {
+    case "dev":
+        console.log('developer')
+
+        break;
+    case "dr":
+    case "doc":    
+        console.log('doctor')
+
+        break;
+    case 20 :
+        console.log('num = 20')    
+        break
+    default:
+        console.log('invalid')
+}
+
+
+// console.log(1)
+// console.log(2)
+// console.log(3)
+// console.log(4)
+// console.log(5)
+// console.log(6)
+// console.log(7)
+// console.log(8)
+// console.log(9)
+// console.log(10)
+
+// for looping 
+
+// for(variable ; condition ; increment/decrement){
+//     code 
+// }
+
+for(var i = 1 ; i <= 10 ;i++){
+    // if(i == 3) console.log('number = 3')
+    if(i == 3) continue
+    else if(i == 8) break
+    console.log(i)
+    
+}
