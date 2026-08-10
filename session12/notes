@@ -3,3 +3,9 @@ function ==> block of code
              parameters 
              return
              call() (required)
+
+--- Methods of array ==> slice()
+                         sort()
+                         reverse()
+                         toString()
+                         join()
