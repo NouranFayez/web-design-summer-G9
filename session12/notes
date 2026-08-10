@@ -9,3 +9,29 @@ function ==> block of code
                          reverse()
                          toString()
                          join()
+                         filter()
+                         map()
+
+
+
+-- Methods of String ==> trim()
+                         replace()
+                         replaceAll()
+                         indexof()
+                         includes() 
+                         startsWith()
+                         endsWith() 
+                         slice()  
+
+
+-- Methods of number ==> parseInt()
+                         parseFloat()
+                         isNaN()
+                         Math.random()    
+                         Math.floor()
+                         Math.ceil()
+                         Math.round()
+                         Math.abs()
+                         Math.trunc()
+                         Math.min()
+                         Math.max()                                          

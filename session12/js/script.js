@@ -135,6 +135,7 @@
 // var isGraduated = true
 
 
+////////////////////////////////////// Array
 var userInfo = ["zein", "october", true, 20]
 // console.log(userInfo[3]); // get item
 userInfo[4] = "Egyptian"
@@ -198,19 +199,19 @@ courses.splice(2, 1, "React", "Node")
 
 
 var nums = [3, 40, 10, 5, 2]
-console.log(nums)
+// console.log(nums)
 
-nums.forEach((item , i)=>{
+nums.forEach((item, i) => {
     // if(item > 10) console.log(item)
     // if(item > 10) console.log(i)
 })
 
-var element = nums.find((item , i , arr)=>{
-   return item > 10
+var element = nums.find((item, i, arr) => {
+    return item > 10
 })
 
-var element = nums.find((item)=> item > 10)
-var element = nums.find((item)=> item > 100) // undefined
+var element = nums.find((item) => item > 10)
+var element = nums.find((item) => item > 100) // undefined
 
 var index = nums.findIndex(item => item > 10)
 var index = nums.findIndex(item => item > 100) // -1 
@@ -218,17 +219,156 @@ var index = nums.findIndex(item => item > 100) // -1
 
 var i = nums.findIndex(item => item == 10)
 
-console.log(element)
-console.log(index)
+// console.log(element)
+// console.log(index)
 
-console.log(i)
-
-
+// console.log(i)
 
 
 
 
+////////////////////////////////// object
 
+
+
+// var userInfo = ["zein", "october", true, 20]
+var arr = []
+
+// var firstName = "zein"
+// var age = 40
+// var address = "october"
+// var isGraduated = true
+
+
+
+// var firstName = "Tamer"
+// var lastName = "Fayez"
+var user = {
+    firstName: "Sara",
+    lastName: "Ahmed",
+    age: 20,
+    address: "october",
+    isGraduated: true,
+    fullName: function () {
+        return user.firstName + this.lastName
+    },
+    addressList: () => {
+        return {
+            homeAddress: "october",
+            officeAddress: "Nasr city"
+        }
+    }
+
+}
+
+console.log(user.firstName)
+user.phone = "010000000"
+user.age = 25
+
+console.log(user)
+console.log(user.fullName())
+console.log(user.addressList().officeAddress)
+
+
+
+var user2 = {
+    firstName: "Marwa",
+    lastName: "Mohamed",
+    age: 30,
+    address: "Maddi",
+    isGraduated: true,
+    fullName: function () {
+        return this.firstName + this.lastName
+    },
+    addressList: () => {
+        return {
+            homeAddress: "october",
+            officeAddress: "Nasr city"
+        }
+    }
+
+}
+
+
+///////////// Array of objects ////////////////////////
+var usersList = [
+    {
+        firstName: "Sara",
+        lastName: "Ahmed",
+        age: 20,
+        address: "october",
+        isGraduated: true,
+        fullName: function () {
+            return user.firstName + this.lastName
+        },
+        addressList: () => {
+            return {
+                homeAddress: "october",
+                officeAddress: "Nasr city"
+            }
+        }
+
+    },
+    {
+        firstName: "Marwa",
+        lastName: "Mohamed",
+        age: 30,
+        address: "Maddi",
+        isGraduated: true,
+        fullName: function () {
+            return this.firstName + this.lastName
+        },
+        addressList: () => {
+            return {
+                homeAddress: "october",
+                officeAddress: "Nasr city"
+            }
+        }
+
+    },
+    {
+        firstName: "zein",
+        lastName: "tamer",
+        age: 10,
+        address: "new cairo",
+        isGraduated: true,
+        fullName: function () {
+            return this.firstName + this.lastName
+        },
+        addressList: () => {
+            return {
+                homeAddress: "october",
+                officeAddress: "Nasr city"
+            }
+        }
+
+    }
+
+]
+
+console.log(usersList);
+console.log(usersList[1])
+
+
+
+
+var userIndex = usersList.findIndex(item => item.age == 10)
+var userElement = usersList.find(item => item.age == 30)
+console.log(userIndex)
+console.log(userElement)
+
+console.log("-----------------------------------------")
+
+usersList.forEach((item , i , arr)=>{
+    console.log(item)
+
+})
+console.log("-----------------------------------------")
+
+
+console.log(usersList[1])
+console.log(usersList[1].addressList())
+console.log(usersList[1].addressList().officeAddress)
 
 
 
