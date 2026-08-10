@@ -1,0 +1,5 @@
+function ==> block of code 
+             name (required)
+             parameters 
+             return
+             call() (required)
