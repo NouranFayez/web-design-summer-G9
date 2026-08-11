@@ -1,0 +1,14 @@
+// classList.toggle() ==> search
+
+// document.querySelector() ==> search
+// document.querySelectorAll() ==> search
+
+
+//////// Relationship Node (elements) //////////////
+// nextElementSibling 
+// previouseElementSibling
+// parentElement
+// firstElementChild
+// lastElementChild
+
+// https://www.w3schools.com/jsref/dom_obj_event.asp 
