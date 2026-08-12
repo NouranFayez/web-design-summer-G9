@@ -153,3 +153,18 @@ var handleFilter =(type)=>{
 }
 
 
+// document.querySelector('.owl-carousel')
+
+// https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
+
+// https://kenwheeler.github.io/slick/
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items : 4 ,
+    margin: 30,
+    loop : true,
+    nav : true,
+    navText : ['<i class="fa-solid fa-arrow-left text-primary bg-warning"></i>' , '<i class="fa-solid fa-arrow-right"></i>']
+  });
+});
