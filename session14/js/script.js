@@ -30,7 +30,7 @@ var passwordValidation = (input) => {
     var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$/;
 
     // console.log(regex.test(inputValue));
-      (regex.test(inputValue))
+    (regex.test(inputValue))
         ? handleError(input)
         : handleError(input, "enter at least 1 lowecase , 1 uppercase , 1 digit , 1 special character .........")
 
@@ -58,10 +58,98 @@ registerForm.addEventListener('input', (e) => {
 
 
 
-
-
 // name ==> 3 charater
 // email ==> userName@domain.subdomain
 // password ==> uppercase , lowecase , number , special character (!@#$%^*&)
+
+
+
+
+
+// localStorage.setItem("FirstName" , "Zein")
+// localStorage.setItem("age" , "10")
+// localStorage.setItem("address" , "Maadi")
+// localStorage.setItem("userName" , "Sara")
+
+// localStorage.removeItem("userName")
+
+// console.log(localStorage.getItem("address"))
+
+
+
+
+
+var users = [
+    {
+        name: "Nouran",
+        email: "Nouran@email.com"
+    },
+    {
+        name: "Sara",
+        email: "Sara@email.com"
+    },
+    {
+        name: "Ahmed",
+        email: "Ahmed@email.com"
+    },
+
+]
+
+var course = ['html' , "css" , "js"]
+console.log(course.toString())
+console.log(users.toString())
+
+localStorage.setItem('usersList' , JSON.stringify(users))
+
+console.log(JSON.stringify(users))
+
+
+var usersArray = JSON.parse(localStorage.getItem('usersList')) 
+
+usersArray.push({
+    name : "Tamer" , email:"tamer@email.com"
+})
+
+
+
+var h1 = document.getElementById('h1_element')
+var i = 100
+
+
+// / setInterval( callBkFunc , time)
+var set = setInterval(()=>{
+    // console.log('js')
+    // console.log('web design')
+
+    h1.innerText = i
+
+    if(i == 50) clearInterval(set)
+
+
+    i--
+
+} , 100 )
+
+
+
+var fruits = document.getElementsByClassName('fruits')
+var veg = document.getElementsByClassName('vegetables')
+var categories = document.getElementsByClassName('categoryFilter')
+
+var handleFilter =(type)=>{
+    for(var i = 0 ; i < categories.length ; i++){ 
+        categories[i].style.display = "block"
+    }
+    if(type == "fr") {
+        for(var i = 0 ; i < veg.length ; i++){
+            veg[i].style.display = "none"
+        }
+    }
+    else {
+          for(var i = 0 ; i < fruits.length ; i++){
+            fruits[i].style.display = "none"
+        }  
+    }
+}
 
 
